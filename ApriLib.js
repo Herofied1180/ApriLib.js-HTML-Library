@@ -154,3 +154,10 @@ var lib = {
     },
   }
 };
+Square = function(x, y, width, height){
+    
+//Square function's code
+rect(x, y, width, height);
+    
+//Square function's function definition end
+};
