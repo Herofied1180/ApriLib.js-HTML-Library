@@ -99,8 +99,9 @@ var lib = {
   RadiusSquare: function(x, y, width, height, radius){
     
     //RadiusSquare function's code
-    return rect(x, y, width, height, radius);
-    
+    var RadiusSquare = lib.pI.createGraphics(x, y, width, height){
+    RadiusSquare.rect(x, y, width, height, radius);
+    }
     if(lib.debug === true){
       
      console.log("RadiusSquare Created at pos. " + x + " " + y + " . Width and Height is " + width + " " + height + " .");
@@ -119,10 +120,9 @@ var lib = {
      * @Revisions: 
        * Removed stroke from pixels (12/31/16, @maxzman14)
     */
-    var img = Kit.pI.createGraphics(w || 120, h || 120, 1);
+    var img = lib.pI.createGraphics(w || 120, h || 120, 1);
     img.background(0, 0, 0, 0);
     img.noStroke();
-    
     var longestRow = 0;
     for(var y = 0;y < data.length;y++) {
       if(data[y].length > longestRow) {
@@ -144,20 +144,13 @@ var lib = {
   
   storage: {
     set: function (item, value) {
-      Kit.localStorage.setItem(item, value);
+      lib.localStorage.setItem(item, value);
     },
     get: function (item) {
-      return Kit.localStorage.getItem(item);
+      return lib.localStorage.getItem(item);
     },
     delete: function(item) {
-      Kit.localStorage.removeItem(item);
+      lib.localStorage.removeItem(item);
     },
   }
-};
-Square = function(x, y, width, height){
-    
-//Square function's code
-rect(x, y, width, height);
-    
-//Square function's function definition end
 };
