@@ -122,5 +122,3 @@ var lib = {
     },
   }
 };
-lib.init(Processing, document.getElementById("canvas"), 4820088964841472);
-size(400, 400);
