@@ -76,7 +76,6 @@ var lib = {
     lib.programID = ID;
     lib.localStorage = localStorage;
     lib.debug = false;
-    size(400, 400);
   },
 
 //Extra Function by: TemporalFuzz (@maxzman14)
@@ -123,3 +122,5 @@ var lib = {
     },
   }
 };
+lib.init(Processing, document.getElementById("canvas"), 4820088964841472);
+size(400, 400);
