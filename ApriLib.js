@@ -86,9 +86,8 @@ var lib = {
      * @Revisions: None
     */
     //Square function's code
-    var Square = lib.createGraphics(x, y, width, height){
-      Square.rect(x, y, width, height);
-    }
+      rect(x, y, width, height);
+    
     return Square.get();
     
     if(lib.debug === true){
@@ -102,11 +101,7 @@ var lib = {
   RadiusSquare: function(x, y, width, height, radius){
     
     //RadiusSquare function's code
-    var RadiusSquare = lib.pI.createGraphics(x, y, width, height){
-    RadiusSquare.rect(x, y, width, height, radius);
-    }
-    
-    return RadiusSquare.get();
+    rect(x, y, width, height, radius);
     
     if(lib.debug === true){
       
