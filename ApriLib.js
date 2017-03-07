@@ -36,8 +36,7 @@ If you are using this library in your own project please give credit at the top 
   
  What's New:
  
- - Square Function
- - Extra Function Pixel Art
+ - RadiusSquare Function
   
 =============
 
@@ -86,14 +85,38 @@ var lib = {
      * @Creates (Object): A Square
      * @Revisions: None
     */
-    //Creates a Square
+    //Square function's code
+    var x = return x;
+    var y = return y;
+    var width = return width;
+    var height = return height;
     rect(x, y, width, height);
-    //Checks if the program is in debug mode
+    
     if(lib.debug === true){
-    //Tells debug console that a Square has been created at a specific position
-    console.log("Square Created at pos. " + x + " " + y + " . Width and Height is " + width + " " + height + " .");
+      
+     console.log("Square Created at pos. " + x + " " + y + " . Width and Height is " + width + " " + height + " .");
+      
     }
+    
   },
+  
+  RadiusSquare: function(x, y, width, height, radius){
+    
+    //RadiusSquare function's code
+    var x = return x;
+    var y = return y;
+    var width = return width;
+    var height = return height;
+    rect(x, y, width, height, radius);
+    
+    if(lib.debug === true){
+      
+     console.log("RadiusSquare Created at pos. " + x + " " + y + " . Width and Height is " + width + " " + height + " .");
+      
+    }
+    
+},
+
 //Extra Function by: TemporalFuzz (@maxzman14)
   pixelArt: function(data, colors, w, h) {
     /* @Author: TemporalFuzz (@maxzman14)
