@@ -86,11 +86,7 @@ var lib = {
      * @Revisions: None
     */
     //Square function's code
-    var x = return x;
-    var y = return y;
-    var width = return width;
-    var height = return height;
-    rect(x, y, width, height);
+    rect(return x, return y, return width, return height);
     
     if(lib.debug === true){
       
@@ -103,11 +99,7 @@ var lib = {
   RadiusSquare: function(x, y, width, height, radius){
     
     //RadiusSquare function's code
-    var x = return x;
-    var y = return y;
-    var width = return width;
-    var height = return height;
-    rect(x, y, width, height, radius);
+    rect(return x, return y, return width, return height, return radius);
     
     if(lib.debug === true){
       
