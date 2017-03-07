@@ -77,39 +77,6 @@ var lib = {
     lib.localStorage = localStorage;
     lib.debug = false;
   },
-  
-  //Create function "Square"
-  Square: function(x, y, width, height) {
-    /* @Author: AbundaSoft(Noah) (@AbundaSoft)
-     * @Param xPos (x): The X position of the Square (y): The Y position of the Square (width): The width of the Square (height): The height of the Square
-     * @Creates (Object): A Square
-     * @Revisions: None
-    */
-    //Square function's code
-      rect(x, y, width, height);
-    
-    return Square.get();
-    
-    if(lib.debug === true){
-      
-     console.log("Square Created at pos. " + x + " " + y + " . Width and Height is " + width + " " + height + " .");
-      
-    }
-    
-  },
-  
-  RadiusSquare: function(x, y, width, height, radius){
-    
-    //RadiusSquare function's code
-    rect(x, y, width, height, radius);
-    
-    if(lib.debug === true){
-      
-     console.log("RadiusSquare Created at pos. " + x + " " + y + " . Width and Height is " + width + " " + height + " .");
-      
-    }
-    
-},
 
 //Extra Function by: TemporalFuzz (@maxzman14)
   pixelArt: function(data, colors, w, h) {
