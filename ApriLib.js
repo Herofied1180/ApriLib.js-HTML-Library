@@ -86,7 +86,10 @@ var lib = {
      * @Revisions: None
     */
     //Square function's code
-    return rect(x, y, width, height);
+    var Square = lib.createGraphics(x, y, width, height){
+      Square.rect(x, y, width, height);
+    }
+    return Square.get();
     
     if(lib.debug === true){
       
@@ -102,6 +105,9 @@ var lib = {
     var RadiusSquare = lib.pI.createGraphics(x, y, width, height){
     RadiusSquare.rect(x, y, width, height, radius);
     }
+    
+    return RadiusSquare.get();
+    
     if(lib.debug === true){
       
      console.log("RadiusSquare Created at pos. " + x + " " + y + " . Width and Height is " + width + " " + height + " .");
