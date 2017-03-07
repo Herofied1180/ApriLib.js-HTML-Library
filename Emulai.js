@@ -36,7 +36,7 @@ If you are using this library in your own project please give credit at the top 
   
  What's New:
  
- - RadiusSquare Function
+ - Major Bug Fixes
   
 =============
 
@@ -54,7 +54,7 @@ If you are using this library in your own project please give credit at the top 
 NOTE:
 This function has already been pre-defined, so please do NOT re-define this function's code, or your program might become messed up and the code won't work.
 */
-
+size(400, 400);
 var lib = {
   canvas: null,//The canvas to apply commands to
   pI: null,//The processing instance to apply the commands with
