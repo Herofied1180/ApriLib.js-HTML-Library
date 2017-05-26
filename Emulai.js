@@ -123,8 +123,8 @@ var lib = {
       lib.localStorage.removeItem(item);
     },
     
-  },
-      boot: function (mode){
+   },
+        boot: function (mode){
       var pjs = lib.pI;
       
       if(lib.localStorage.getItem("booted") === "true"){
@@ -225,5 +225,5 @@ var lib = {
         };
               }
       }
-    }
+  }
 };
