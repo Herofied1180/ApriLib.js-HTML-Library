@@ -225,6 +225,5 @@ var lib = {
     delete: function(item) {
       lib.localStorage.removeItem(item);
     },
-  },
   }
 };
