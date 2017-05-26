@@ -79,38 +79,6 @@ var lib = {
     lib.localStorage = localStorage;
     lib.debug = false;
   },
-
-//Extra Function by: TemporalFuzz (@maxzman14)
-  pixelArt: function(data, colors, w, h) {
-    /* @Author: TemporalFuzz (@maxzman14)
-     * @Param data (2D Array): The data that the pixel art uses
-     * @Colors (Object): Matches each key with a color
-     * @Params w, h (Numbers): Width and height of the image respectively. Both default to 120.
-     * @Returns (Image): A new image with the pixel art drawn on it
-     * @Revisions: 
-       * Removed stroke from pixels (12/31/16, @maxzman14)
-    */
-    var img = lib.pI.createGraphics(w || 120, h || 120, 1);
-    img.background(0, 0, 0, 0);
-    img.noStroke();
-    var longestRow = 0;
-    for(var y = 0;y < data.length;y++) {
-      if(data[y].length > longestRow) {
-        longestRow = data[y].length;
-      }
-    }
-    
-    for(var y = 0;y < data.length;y++) {
-      for(var x = 0;x < data[y].length;x++) {
-        if(colors[data[y][x]] !== undefined) {
-          img.fill(colors[data[y][x]]);
-          img.rect(x * img.width/longestRow, y * img.height/data.length, img.width/longestRow, img.height/data.length);
-        }
-      }
-    }
-    
-    return img.get();
-  },
   
         boot: function (mode){
       var pjs = lib.pI;
@@ -214,6 +182,38 @@ var lib = {
               }
       }
         },
+
+//Extra Function by: TemporalFuzz (@maxzman14)
+  pixelArt: function(data, colors, w, h) {
+    /* @Author: TemporalFuzz (@maxzman14)
+     * @Param data (2D Array): The data that the pixel art uses
+     * @Colors (Object): Matches each key with a color
+     * @Params w, h (Numbers): Width and height of the image respectively. Both default to 120.
+     * @Returns (Image): A new image with the pixel art drawn on it
+     * @Revisions: 
+       * Removed stroke from pixels (12/31/16, @maxzman14)
+    */
+    var img = lib.pI.createGraphics(w || 120, h || 120, 1);
+    img.background(0, 0, 0, 0);
+    img.noStroke();
+    var longestRow = 0;
+    for(var y = 0;y < data.length;y++) {
+      if(data[y].length > longestRow) {
+        longestRow = data[y].length;
+      }
+    }
+    
+    for(var y = 0;y < data.length;y++) {
+      for(var x = 0;x < data[y].length;x++) {
+        if(colors[data[y][x]] !== undefined) {
+          img.fill(colors[data[y][x]]);
+          img.rect(x * img.width/longestRow, y * img.height/data.length, img.width/longestRow, img.height/data.length);
+        }
+      }
+    }
+    
+    return img.get();
+  },
   
   storage: {
     set: function (item, value) {
