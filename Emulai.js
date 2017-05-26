@@ -112,18 +112,6 @@ var lib = {
     return img.get();
   },
   
-  storage: {
-    set: function (item, value) {
-      lib.localStorage.setItem(item, value);
-    },
-    get: function (item) {
-      return lib.localStorage.getItem(item);
-    },
-    delete: function(item) {
-      lib.localStorage.removeItem(item);
-    },
-    
-   },
         boot: function (mode){
       var pjs = lib.pI;
       
@@ -225,5 +213,18 @@ var lib = {
         };
               }
       }
+        },
+  
+  storage: {
+    set: function (item, value) {
+      lib.localStorage.setItem(item, value);
+    },
+    get: function (item) {
+      return lib.localStorage.getItem(item);
+    },
+    delete: function(item) {
+      lib.localStorage.removeItem(item);
+    },
+  },
   }
 };
