@@ -32,11 +32,13 @@ If you are using this library in your own project please give credit at the top 
  
  Use:
  
-  - To use this in your own projects, make a spin-off of this. Please don't copy and paste this code without credit like a link to this code, and a link to my profile.
+  - To use this in your own projects, make a spin-off of this. Please don't copy and paste this code without credit or link to this code, and a link to my profile.
   
  What's New:
  
- - Major Bug Fixes
+ - EmulaiJS has currently been rebranded as HTJSL
+ 
+ - 
   
 =============
 
@@ -49,7 +51,7 @@ If you are using this library in your own project please give credit at the top 
 
 */
 
-//The ApriLib code function
+//The HTJSL code function
 /*
 NOTE:
 This function has already been pre-defined, so please do NOT re-define this function's code, or your program might become messed up and the code won't work.
