@@ -124,11 +124,11 @@ var lib = {
       lib.localStorage.removeItem(item);
     },
     
-            boot: function (mode){
+            boot: function (){
       var pjs = lib.pI;
       
       if(lib.localStorage.getItem("booted") === "true"){
-                      if(mode === "boot") {
+                      
         pjs.background(159, 210, 252);
         pjs.fill(10 - 159, 210, 22 - 255 - 252);
         pjs.textSize(25);
@@ -156,9 +156,9 @@ var lib = {
     
             
             }
-                      }
-      } else if(lib.localStorage.getItem("booted") !== "true") {
-              if(mode === "boot") {
+                      
+            } else if(lib.localStorage.getItem("booted") !== "true") {
+              
         pjs.background(159, 210, 252);
         pjs.fill(10 - 159, 210, 22 - 255 - 252);
         pjs.textSize(25);
@@ -219,7 +219,7 @@ var lib = {
         
             };
     
-            };
+            
             }
     
         };
